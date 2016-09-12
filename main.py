@@ -70,7 +70,7 @@ def decode(url):
 # 生成网址列表
 def buildUrls():
     #word = urllib.parse.quote(word)
-    url = r"http://image.baidu.com/search/acjson?tn=resultjson_com&ipn=rj&ct=201326592&fp=result&queryWord==%E5%A4%A7%E8%83%B8%E7%BE%8E%E5%A5%B3&cl=2&lm=-1&ie=utf-8&oe=utf-8&st=-1&ic=0&word==%E5%A4%A7%E8%83%B8%E7%BE%8E%E5%A5%B3&face=0&istype=2nc=1&pn={pn}&rn=60"
+    url = r"http://image.baidu.com/search/acjson?tn=resultjson_com&ipn=rj&ct=201326592&fp=result&queryWord==%E7%BE%8E%E5%A5%B3%E5%A4%B4%E5%83%8F&cl=2&lm=-1&ie=utf-8&oe=utf-8&st=-1&ic=0&word==%E7%BE%8E%E5%A5%B3%E5%A4%B4%E5%83%8F&face=0&istype=2nc=1&pn={pn}&rn=60"
     urls = (url.format(pn=x) for x in itertools.count(start=0, step=60))
     return urls
 
